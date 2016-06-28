@@ -1,0 +1,75 @@
+/* Prettify Stylesheet Modified by Rama Adithya */
+
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .tag { color: #1e347b;}
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+pre.prettyprint, .print {
+        background: #fff url(../images/noise.png) repeat;
+        border: 1px dashed #8f8585;
+        font-size: 14px;
+        line-height: 18px;
+        overflow:auto;
+}
+
+.print {
+color:#000;
+padding:3px;
+}
+
+code.prettyprint {
+        background-color: #fff;
+        padding:2px;
+        font-size: 14px;
+        padding: 2px 4px 2px 4px;
+        border:1px dashed 8f8585;
+}
+
+pre.prettyprint {
+        width: 95%;
+        margin: 0.3em auto 1em auto;
+        padding: 1em;
+        white-space: pre-wrap;
+        transition:all 0.5s;
+}
+
+pre.prettyprint:hover {
+        border: 1px dashed aqua;
+}
+
+ol.linenums{
+	margin-top:0;
+	margin-bottom:0
+}
+.prettyprint.linenums {
+    box-shadow: inset 40px 0 0 #fff, inset 41px 0 0 #8f8585;
+}
+
+.prettyprint ol.linenums {
+    margin: 0;
+    padding-left: 25px;
+}
+.prettyprint ol.linenums li {
+    padding-left: 12px !important;
+    color: #8f8585;
+    line-height: 10pt;
+    margin-bottom: 5px;
+}
+
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+}
